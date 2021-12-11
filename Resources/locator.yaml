@@ -1,0 +1,5 @@
+accessibility : xpath=//android.widget.TextView[@content-desc="Accessibility"]
+accesibility_node_provider : xpath=//android.widget.TextView[@content-desc="Accessibility Node Provider"]
+accesibility_node_querying : xpath=//android.widget.TextView[@content-desc="Accessibility Node Querying"]
+accesibility_service : id=Accessibility Service
+custom_view : id =Custom View

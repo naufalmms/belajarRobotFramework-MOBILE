@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.2 (Python 3.10.0 on win32)" generated="20211209 21:27:46.420" rpa="false" schemaversion="2">
+<suite id="s1" name="apiDemosStep" source="F:\Documents\GitHub\belajarRobotFramework-MOBILE\Step\apiDemosStep.robot">
+<test id="s1-t1" name="Open Node Provider Querying">
+<kw name="Start Session" library="apiDemosPage" type="SETUP">
+<kw name="Open Application" library="AppiumLibrary">
+<arg>http://localhost:4723/wd/hub</arg>
+<arg>automationName=UiAutomator2</arg>
+<arg>platformName=Android</arg>
+<arg>deviceName=emulator-5554</arg>
+<arg>appPackage=io.appium.android.apis</arg>
+<arg>appActivity=io.appium.android.apis.ApiDemos</arg>
+<arg>autoGrantPermissions=true</arg>
+<arg>noReset=true</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |</doc>
+<status status="PASS" starttime="20211209 21:27:46.689" endtime="20211209 21:27:53.646"/>
+</kw>
+<status status="PASS" starttime="20211209 21:27:46.688" endtime="20211209 21:27:53.646"/>
+</kw>
+<kw name="Tap Accessibilty" library="apiDemosPage">
+<kw name="Tap" library="AppiumLibrary">
+<arg>${accessibility}</arg>
+<doc>Tap element identified by ``locator``. </doc>
+<msg timestamp="20211209 21:27:53.648" level="FAIL">Variable '${accessibility}' not found.</msg>
+<status status="FAIL" starttime="20211209 21:27:53.647" endtime="20211209 21:27:53.648"/>
+</kw>
+<status status="FAIL" starttime="20211209 21:27:53.646" endtime="20211209 21:27:53.649"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20211209 21:27:53.650" endtime="20211209 21:27:53.650"/>
+</kw>
+<kw name="Tap Accessibilty Node Querying" library="apiDemosPage">
+<status status="NOT RUN" starttime="20211209 21:27:53.650" endtime="20211209 21:27:53.650"/>
+</kw>
+<kw name="Page Should Contain Text" library="AppiumLibrary">
+<arg>Take out Trash</arg>
+<doc>Verifies that current page contains `text`.</doc>
+<status status="NOT RUN" starttime="20211209 21:27:53.650" endtime="20211209 21:27:53.650"/>
+</kw>
+<kw name="Close Application" library="AppiumLibrary" type="TEARDOWN">
+<doc>Closes the current application and also close webdriver session.</doc>
+<status status="PASS" starttime="20211209 21:27:53.651" endtime="20211209 21:27:54.126"/>
+</kw>
+<status status="FAIL" starttime="20211209 21:27:46.688" endtime="20211209 21:27:54.127">Variable '${accessibility}' not found.</status>
+</test>
+<status status="FAIL" starttime="20211209 21:27:46.422" endtime="20211209 21:27:54.128"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="apiDemosStep">apiDemosStep</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
