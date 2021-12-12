@@ -3,3 +3,25 @@ accesibility_node_provider : xpath=//android.widget.TextView[@content-desc="Acce
 accesibility_node_querying : xpath=//android.widget.TextView[@content-desc="Accessibility Node Querying"]
 accesibility_service : id=Accessibility Service
 custom_view : id =Custom View
+
+
+#Locator Tab Animation
+animation : xpath=//android.widget.TextView[@content-desc="Animation"]
+bouncingBalls : xpath=//android.widget.TextView[@content-desc="Bouncing Balls"]
+cloning : xpath=//android.widget.TextView[@content-desc="Cloning"]
+customEvaluator : xpath=//android.widget.TextView[@content-desc="Custom Evaluator"]
+defaultLayoutAnimations : xpath=//android.widget.TextView[@content-desc="Default Layout Animations"]
+events : xpath=//android.widget.TextView[@content-desc="Events"]
+hideShowAnimations : xpath=//android.widget.TextView[@content-desc="Hide-Show Animations"]
+layoutAnimations : xpath=//android.widget.TextView[@content-desc="Layout Animations"]
+loading : xpath=//android.widget.TextView[@content-desc="Loading"]
+multipleProperties : xpath=//android.widget.TextView[@content-desc="Multiple Properties"]
+reversing : xpath=//android.widget.TextView[@content-desc="Reversing"]
+seeking : xpath=//android.widget.TextView[@content-desc="Seeking"]
+viewFlip : xpath=//android.widget.TextView[@content-desc="View Flip"]
+cloning_run : xpath=//android.widget.Button[@content-desc="Run"]
+
+
+
+
+

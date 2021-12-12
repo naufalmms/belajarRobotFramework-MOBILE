@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 4.1.2 (Python 3.10.0 on win32)" generated="20211209 21:27:46.420" rpa="false" schemaversion="2">
-<suite id="s1" name="apiDemosStep" source="F:\Documents\GitHub\belajarRobotFramework-MOBILE\Step\apiDemosStep.robot">
-<test id="s1-t1" name="Open Node Provider Querying">
+<robot generator="Robot 4.1.2 (Python 3.10.0 on win32)" generated="20211212 16:50:47.064" rpa="false" schemaversion="2">
+<suite id="s1" name="apiDemosStep" source="F:\Documents\GitHub\belajarRobotFramework-MOBILE\step\apiDemosStep.robot">
+<test id="s1-t1" name="i want to test cloning animation">
 <kw name="Start Session" library="apiDemosPage" type="SETUP">
 <kw name="Open Application" library="AppiumLibrary">
 <arg>http://localhost:4723/wd/hub</arg>
@@ -18,48 +18,89 @@ Please check https://github.com/appium/appium/blob/master/docs/en/writing-runnin
 | *Option*            | *Man.* | *Description*     |
 | remote_url          | Yes    | Appium server url |
 | alias               | no     | alias             |</doc>
-<status status="PASS" starttime="20211209 21:27:46.689" endtime="20211209 21:27:53.646"/>
+<status status="PASS" starttime="20211212 16:50:47.340" endtime="20211212 16:50:54.479"/>
 </kw>
-<status status="PASS" starttime="20211209 21:27:46.688" endtime="20211209 21:27:53.646"/>
+<status status="PASS" starttime="20211212 16:50:47.339" endtime="20211212 16:50:54.479"/>
 </kw>
-<kw name="Tap Accessibilty" library="apiDemosPage">
-<kw name="Tap" library="AppiumLibrary">
-<arg>${accessibility}</arg>
-<doc>Tap element identified by ``locator``. </doc>
-<msg timestamp="20211209 21:27:53.648" level="FAIL">Variable '${accessibility}' not found.</msg>
-<status status="FAIL" starttime="20211209 21:27:53.647" endtime="20211209 21:27:53.648"/>
+<kw name="Tap Animations" library="apiDemosPage">
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${animation}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20211212 16:50:54.482" level="INFO">Clicking element 'xpath=//android.widget.TextView[@content-desc="Animation"]'.</msg>
+<status status="PASS" starttime="20211212 16:50:54.480" endtime="20211212 16:50:55.944"/>
 </kw>
-<status status="FAIL" starttime="20211209 21:27:53.646" endtime="20211209 21:27:53.649"/>
+<status status="PASS" starttime="20211212 16:50:54.479" endtime="20211212 16:50:55.944"/>
+</kw>
+<kw name="Tap Cloning" library="apiDemosPage">
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${cloning}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20211212 16:50:55.947" level="INFO">Clicking element 'xpath=//android.widget.TextView[@content-desc="Cloning"]'.</msg>
+<status status="PASS" starttime="20211212 16:50:55.945" endtime="20211212 16:50:57.195"/>
+</kw>
+<status status="PASS" starttime="20211212 16:50:55.945" endtime="20211212 16:50:57.195"/>
+</kw>
+<kw name="tap cloning run button" library="apiDemosPage">
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${cloning_run}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20211212 16:50:57.197" level="INFO">Clicking element 'xpath=//android.widget.Button[@content-desc="Run"]'.</msg>
+<status status="PASS" starttime="20211212 16:50:57.195" endtime="20211212 16:50:57.270"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>1</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" starttime="20211209 21:27:53.650" endtime="20211209 21:27:53.650"/>
+<msg timestamp="20211212 16:50:58.281" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20211212 16:50:57.270" endtime="20211212 16:50:58.281"/>
 </kw>
-<kw name="Tap Accessibilty Node Querying" library="apiDemosPage">
-<status status="NOT RUN" starttime="20211209 21:27:53.650" endtime="20211209 21:27:53.650"/>
+<status status="PASS" starttime="20211212 16:50:57.195" endtime="20211212 16:50:58.281"/>
 </kw>
-<kw name="Page Should Contain Text" library="AppiumLibrary">
-<arg>Take out Trash</arg>
-<doc>Verifies that current page contains `text`.</doc>
-<status status="NOT RUN" starttime="20211209 21:27:53.650" endtime="20211209 21:27:53.650"/>
+<kw name="tap cloning run button" library="apiDemosPage">
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${cloning_run}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20211212 16:50:58.286" level="INFO">Clicking element 'xpath=//android.widget.Button[@content-desc="Run"]'.</msg>
+<status status="PASS" starttime="20211212 16:50:58.282" endtime="20211212 16:50:58.606"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211212 16:50:59.609" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20211212 16:50:58.606" endtime="20211212 16:50:59.609"/>
+</kw>
+<status status="PASS" starttime="20211212 16:50:58.282" endtime="20211212 16:50:59.609"/>
+</kw>
+<kw name="tap cloning run button" library="apiDemosPage">
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${cloning_run}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20211212 16:50:59.613" level="INFO">Clicking element 'xpath=//android.widget.Button[@content-desc="Run"]'.</msg>
+<status status="PASS" starttime="20211212 16:50:59.611" endtime="20211212 16:50:59.723"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211212 16:51:00.724" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20211212 16:50:59.723" endtime="20211212 16:51:00.724"/>
+</kw>
+<status status="PASS" starttime="20211212 16:50:59.610" endtime="20211212 16:51:00.724"/>
 </kw>
 <kw name="Close Application" library="AppiumLibrary" type="TEARDOWN">
 <doc>Closes the current application and also close webdriver session.</doc>
-<status status="PASS" starttime="20211209 21:27:53.651" endtime="20211209 21:27:54.126"/>
+<status status="PASS" starttime="20211212 16:51:00.725" endtime="20211212 16:51:01.275"/>
 </kw>
-<status status="FAIL" starttime="20211209 21:27:46.688" endtime="20211209 21:27:54.127">Variable '${accessibility}' not found.</status>
+<status status="PASS" starttime="20211212 16:50:47.339" endtime="20211212 16:51:01.280"/>
 </test>
-<status status="FAIL" starttime="20211209 21:27:46.422" endtime="20211209 21:27:54.128"/>
+<status status="PASS" starttime="20211212 16:50:47.066" endtime="20211212 16:51:01.281"/>
 </suite>
 <statistics>
 <total>
-<stat pass="0" fail="1" skip="0">All Tests</stat>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="0" fail="1" skip="0" id="s1" name="apiDemosStep">apiDemosStep</stat>
+<stat pass="1" fail="0" skip="0" id="s1" name="apiDemosStep">apiDemosStep</stat>
 </suite>
 </statistics>
 <errors>

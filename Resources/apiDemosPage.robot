@@ -30,3 +30,55 @@ Tap Accessibilty Node Querying
 Close Session
     Capture Page Screenshoot
     Close Application
+
+
+Tap Animations
+    Click Element                   ${animation}
+
+Tap Bouncing Balls
+    Click Element                   ${bouncingBalls}
+
+Tap Cloning
+    Click Element                   ${cloning}
+
+Tap Custom Evaluator
+    Click Element                   ${customEvaluator}
+
+Tap Default Layout Animations
+    Click Element                   ${defaultLayoutAnimations}
+
+Tap Events
+    Click Element                   ${events}
+
+Tap Hide-Show Animations
+    Click Element                   ${hideShowAnimations}
+
+Tap Layout Animations
+    Click Element                   ${layoutAnimations}
+
+Tap Loading
+    Click Element                   ${loading}
+
+Tap Multiple Properties
+    Click Element                   ${multipleProperties}
+
+Tap Reversing
+    Click Element                   ${reversing}
+
+Tap Seeking
+    Click Element                   ${seeking}
+
+Tap View Flip
+    Click Element                   ${viewFlip}
+
+Click Coordinate
+    Click Element At Coordinates    100         300
+    Sleep                           1
+    Click Element At Coordinates    200         300
+    Sleep                           1
+    Click Element At Coordinates    300         300
+    Sleep                           1
+
+tap cloning run button
+    Click Element                   ${cloning_run}
+    Sleep                           1
